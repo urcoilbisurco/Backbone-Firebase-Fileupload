@@ -1,0 +1,74 @@
+.file-upload {
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+  color: #666;
+  border-radius: 999em;
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  background-position: center; }
+  .file-upload * {
+    box-sizing: border-box; }
+  .file-upload .icon {
+    fill: white; }
+  .file-upload .container {
+    padding: 8px;
+    background: rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 999em;
+    width: 100%;
+    height: 100%; }
+    .file-upload .container .wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border: 2px dashed white;
+      border-radius: 999em;
+      width: 100%;
+      height: 100%; }
+    .file-upload .container .input {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+    .file-upload .container #file-input {
+      width: 0.1px;
+      height: 0.1px;
+      opacity: 0;
+      overflow: hidden;
+      position: absolute;
+      z-index: -1; }
+    .file-upload .container .message {
+      font-size: 1.2em;
+      display: none;
+      align-items: center;
+      flex-direction: column; }
+      .file-upload .container .message .bar {
+        margin-top: 8px;
+        min-width: 70px;
+        height: 5px;
+        width: 100%;
+        border-radius: 3px;
+        background: white; }
+        .file-upload .container .message .bar .inner-bar {
+          width: 0%;
+          height: 100%;
+          -webkit-transition: width .3s;
+          /* Safari */
+          transition: width .3s;
+          background: #519D9E; }
+      .file-upload .container .message .m {
+        font-weight: 600;
+        margin-bottom: 8px; }
+      .file-upload .container .message .s {
+        font-size: 0.8em; }
+  .file-upload.dragover {
+    background: #c6c6c6; }
+    .file-upload.dragover .container {
+      border: 2px dashed white; }

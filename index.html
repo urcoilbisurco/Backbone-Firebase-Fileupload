@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Coconut</title>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+    <script src="/env.js"></script>
+    <script src="/backbone.firebase.fileupload.js"></script>
+    <link href="/style.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,600' rel='stylesheet' type='text/css'>
+  </head>
+
+  <body>
+    <div id="file"></div>
+    <script>
+    window.firebase.initializeApp(config);
+    var storage = firebase.storage();
+
+    var view=new FileUploadView({
+      el:$("#file"),
+      storage: storage,
+      folder: "fileupload",
+      onChangeURL:function(url){
+        console.log("this is the url", url);
+      }
+    });
+
+    </script>
+
+
+  </body>
+</html>
