@@ -12,6 +12,8 @@
     box-sizing: border-box; }
   .file-upload .icon {
     fill: white; }
+  .file-upload canvas {
+    display: none; }
   .file-upload .container {
     padding: 8px;
     background: rgba(0, 0, 0, 0.2);
@@ -45,29 +47,9 @@
       position: absolute;
       z-index: -1; }
     .file-upload .container .message {
-      font-size: 1.2em;
       display: none;
       align-items: center;
       flex-direction: column; }
-      .file-upload .container .message .bar {
-        margin-top: 8px;
-        min-width: 70px;
-        height: 5px;
-        width: 100%;
-        border-radius: 3px;
-        background: white; }
-        .file-upload .container .message .bar .inner-bar {
-          width: 0%;
-          height: 100%;
-          -webkit-transition: width .3s;
-          /* Safari */
-          transition: width .3s;
-          background: #519D9E; }
-      .file-upload .container .message .m {
-        font-weight: 600;
-        margin-bottom: 8px; }
-      .file-upload .container .message .s {
-        font-size: 0.8em; }
   .file-upload.dragover {
     background: #c6c6c6; }
     .file-upload.dragover .container {
